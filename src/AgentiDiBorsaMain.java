@@ -48,12 +48,14 @@ public class AgentiDiBorsaMain {
 				quant = input.nextInt();
 
 				momentaneo.add(quant);
+				
 
 				System.out.println("Comprato(B) o Venduto(S)?");
-
 				operation = input.next();
+				
 
-				if (operation.equals("B"))
+				
+	if (operation.equals("B"))
 
 					comprate++;
 
@@ -62,6 +64,7 @@ public class AgentiDiBorsaMain {
 					vendute++;
 
 				momentaneo.add(operation);
+				
 
 				System.out.println("Inserito" + momentaneo);
 				String a = momentaneo.toString();
