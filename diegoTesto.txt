@@ -1,10 +1,10 @@
  1-Diego
- 2-Giro
- 3-U biunnu
- 4-Ludo
- 5-Cassia
- 6-Nova
- 7-Butcher
- 8-Antonio
- 9-Raffaele
-10-Rosa
+ 2-Lulu
+ 3-Giro
+ 4-Luca
+ 5-Jimmi
+ 6-Fra
+ 7-Tizio
+ 8-Nonno
+ 9-Nonna
+10-Zia

@@ -4,10 +4,11 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.ArrayList;
 
 public class LeggereUnFileDiTesto {
 
-	public static void main(String[] args) throws IOException   {
+	public static void main(String[] args) throws IOException {
 
 		String prova = "C:\\Users\\utente\\Desktop\\prova\\diegoTesto.txt";
 		File testoPerGiro = new File(prova);
@@ -16,25 +17,12 @@ public class LeggereUnFileDiTesto {
 		FileWriter scrittore = new FileWriter(testoPerGiro);
 		BufferedWriter scrittoreBuffer = new BufferedWriter(scrittore);
 
-		scrittoreBuffer.write(" 1-Diego");
-		scrittoreBuffer.newLine();
-		scrittoreBuffer.write(" 2-Giro");
-		scrittoreBuffer.newLine();
-		scrittoreBuffer.write(" 3-U biunnu");
-		scrittoreBuffer.newLine();
-		scrittoreBuffer.write(" 4-Ludo");
-		scrittoreBuffer.newLine();
-		scrittoreBuffer.write(" 5-Cassia");
-		scrittoreBuffer.newLine();
-		scrittoreBuffer.write(" 6-Nova");
-		scrittoreBuffer.newLine();
-		scrittoreBuffer.write(" 7-Butcher");
-		scrittoreBuffer.newLine();
-		scrittoreBuffer.write(" 8-Antonio");
-		scrittoreBuffer.newLine();
-		scrittoreBuffer.write(" 9-Raffaele");
-		scrittoreBuffer.newLine();
-		scrittoreBuffer.write("10-Rosa");
+		String nomi[] = { " 1-Diego\n", " 2-Lulu\n", " 3-Giro\n", " 4-Luca\n", " 5-Jimmi\n", " 6-Fra\n", " 7-Tizio\n",
+				" 8-Nonno\n", " 9-Nonna\n", "10-Zia\n" };
+
+		for (String i : nomi)
+
+			scrittoreBuffer.write(i);
 
 		scrittoreBuffer.close();
 
