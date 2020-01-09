@@ -17,17 +17,18 @@ public class Scrivere30_Operazioni {
 		FileWriter scr = new FileWriter(azioni);
 		BufferedWriter scrBuffer= new BufferedWriter(scr);
 		
-		String lista[]= {" 1-Nike 60.5  120 B "," 2-Polo 55.4  200 B "," 3-Adidas 43.0  112 S"," 4-Ren 70.2  230 B",
-				        " 5-Armani 55.5  56 S"," 6-Jo 70.2  234 B"," 7-Puma 34.3   98 S "," 8-Mal 70.0  560 B",
-				" 9-Toky 78.0  245 B","10-Malbo 89.2  789 S","11-Luce 12.3  234 B","12-Oro 65.7  345 S","13-Spider 34.5  123 B",
-				"14-Razen 45.3  276 S","15-OH 45  123 B","16-Eni 56  432 B","17-Enel 76  321 B","18-London 53.0  612 S",
-				"19-Blu 53.2  999 B","20-Silver 87.7  321 B","21-Bronzo 65.5  232 S","22-Peace 72.8  563 S ",
-				"23-Leshp 43.2 345 S","24-Asus 54.3 456 B","25-HP 56.4  654 B","26-Acer 65.4  432 S","27-Samsung 35.6 324",
-				"28-TLC 34.6  534 S","29-Sony 23.4  432 B","30-Nintendo 43.2  456 B",	};
+		String lista[]= {" Nike 60.5  120 B "," Polo 55.4  200 B "," Adidas 43.0  112 S"," Ren 70.2  230 B",
+				        " Armani 55.5  56 S"," Jo 70.2  234 B"," Puma 34.3   98 S "," Mal 70.0  560 B",
+				" Toky 78.0  245 B","Malbo 89.2  789 S","Luce 12.3  234 B","Oro 65.7  345 S","Spider 34.5  123 B",
+				"Razen 45.3  276 S","OH 45  123 B","Eni 56  432 B","Enel 76  321 B","London 53.0  612 S",
+				"Blu 53.2  999 B","Silver 87.7  321 B","Bronzo 65.5  232 S","Peace 72.8  563 S ",
+				"Leshp 43.2 345 S","Asus 54.3 456 B","HP 56.4  654 B","Acer 65.4  432 S","Samsung 35.6 324",
+				"TLC 34.6  534 S","Sony 23.4  432 B","Nintendo 43.2  456 B",	};
 		
 		for(String a:lista) {
-			scrBuffer.newLine();
+			
 			scrBuffer.write(a);
+			scrBuffer.newLine();
 		}
 		
 		scrBuffer.close();
