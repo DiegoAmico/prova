@@ -1,6 +1,7 @@
- 1-Diego
- 2-Lulu
- 3-Giro
+
+ 1-Diego 
+2-Lulu 
+3-Giro
  4-Luca
  5-Jimmi
  6-Fra

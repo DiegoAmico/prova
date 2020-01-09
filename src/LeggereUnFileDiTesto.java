@@ -17,12 +17,12 @@ public class LeggereUnFileDiTesto {
 		FileWriter scrittore = new FileWriter(testoPerGiro);
 		BufferedWriter scrittoreBuffer = new BufferedWriter(scrittore);
 
-		String nomi[] = { " 1-Diego\n", " 2-Lulu\n", " 3-Giro\n", " 4-Luca\n", " 5-Jimmi\n", " 6-Fra\n", " 7-Tizio\n",
-				" 8-Nonno\n", " 9-Nonna\n", "10-Zia\n" };
+		String nomi[] = { " 1-Diego ", "2-Lulu ", "3-Giro", " 4-Luca", " 5-Jimmi", " 6-Fra", " 7-Tizio",
+				" 8-Nonno", " 9-Nonna", "10-Zia" };
 
-		for (String i : nomi)
-
-			scrittoreBuffer.write(i);
+		for (String i : nomi) {
+            scrittoreBuffer.newLine();
+			scrittoreBuffer.write(i);}
 
 		scrittoreBuffer.close();
 
