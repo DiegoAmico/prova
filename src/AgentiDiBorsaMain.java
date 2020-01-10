@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.Scanner;
 
 public class AgentiDiBorsaMain {
 
@@ -7,91 +8,38 @@ public class AgentiDiBorsaMain {
 
 		Scanner input = new Scanner(System.in);
 
-		ArrayList agenti = new ArrayList();
-		ArrayList momentaneo = new ArrayList();
-		String nomeAgente = "";
-		String nomeAzione = "";
-		double importoA = 0.0;
-		int quant = 0;
-		String operation = "a";
-		int comprate = 0;
-		int vendute = 0;
-		int operazioni = 0;
-		String cosaFare = "";
-		int posizione = 0;
+		String elenco[] = new String[5];
+		int OP = 0;
+		String parti[];
+		double totB = 0;
+		double totS = 0;
+		String file = "";
+		int errori = 0;
+		double importo = 0;
+		for (int i = 0; i < elenco.length; i++) {
 
-		do {
-			System.out.println("Totale operazioni lette = " + operazioni);
-			System.out.println("Volte comprate = " + comprate);
-			System.out.println("Volte vendute= " + vendute);
-			System.out.println("inserire o controllare?");
+			System.out.println("inserire file");
 
-			cosaFare = input.next();
+			file = input.nextLine();
 
-			if (cosaFare.equals("inserire")) {
+			elenco[i] = file;
+			OP++;
+		
 
-				operazioni++;
+		parti = file.split(" ");
 
-				System.out.println("Nome Agente ?");
-				nomeAgente = input.next();
-				momentaneo.add(nomeAgente);
-				System.out.println("Nome Azione ?");
-				nomeAzione = input.next();
-				momentaneo.add(nomeAzione);
-				System.out.println("Costo azione ?");
-				importoA = input.nextDouble();
+		importo = Double.parseDouble(parti[1]);
 
-				momentaneo.add(importoA);
+		int quantità = Integer.parseInt(parti[2]);
 
-				System.out.println("Quantità? ");
-
-				quant = input.nextInt();
-
-				momentaneo.add(quant);
-				
-
-				System.out.println("Comprato(B) o Venduto(S)?");
-				operation = input.next();
-				
-
-				
-	if (operation.equals("B"))
-
-					comprate++;
-
-				if (operation.equals("S"))
-
-					vendute++;
-
-				momentaneo.add(operation);
-				
-
-				System.out.println("Inserito" + momentaneo);
-				String a = momentaneo.toString();
-				agenti.add(a);
-				momentaneo.clear();
-			}
-
-			if (cosaFare.equals("controllare")) {
-
-				System.out.println("Quale posizione?");
-				posizione = input.nextInt();
-				System.out.println(agenti.get(posizione));
-			}
-
-			if (cosaFare.equals("esc")) {
-
-				System.out.println("Arrivederci");
-				break;
+		if (parti[3].contentEquals("B")) {
+			totB += (importo * quantità);}
+		if  (parti[3].contentEquals("S")) {
+			totS += (importo * quantità);
 			}
 		}
 
-		while (cosaFare != "");
-
-		input.close();
-
-		;
-
+		System.out.println("Op:(" + OP + ")" + "Buy:(" + totB + ")" + "Sell:(" + totS + ")");
 	}
 
 }
