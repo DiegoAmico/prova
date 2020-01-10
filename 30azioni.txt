@@ -1,12 +1,12 @@
- Nike 60.5  120 B 
- Polo 55.4  200 B 
- Adidas 43.0  112 S
- Ren 70.2  230 B
- Armani 55.5  56 S
- Jo 70.2  234 B
- Puma 34.3   98 S 
- Mal 70.0  560 B
- Toky 78.0  245 B
+Nike 60.5  120 B 
+Polo 55.4  200 B 
+Adidas 43.0  112 S
+Ren 70.2  230 B
+Armani 55.5  56 S
+Jo 70.2  234 B
+Puma 34.3   98 S 
+Mal 70.0  560 B
+Toky 78.0  245 B
 Malbo 89.2  789 S
 Luce 12.3  234 B
 Oro 65.7  345 S
@@ -24,7 +24,7 @@ Leshp 43.2 345 S
 Asus 54.3 456 B
 HP 56.4  654 B
 Acer 65.4  432 S
-Samsung 35.6 324
+Samsung 35.6 324 B
 TLC 34.6  534 S
 Sony 23.4  432 B
 Nintendo 43.2  456 B
