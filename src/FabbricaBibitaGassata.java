@@ -13,9 +13,8 @@ public class FabbricaBibitaGassata {
 		int threshold=70;
 		
 		// giorni entro i quali la bibita può essere venduta 
-		int giorni=0;
-		
-		giorni=threshold/evapPerday;
+				
+		int giorni=threshold/evapPerday;
 		
 		System.out.println("La bibita deve essere consumata entro "+giorni+" giorni");
 		
