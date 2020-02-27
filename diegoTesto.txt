@@ -1,11 +1,10 @@
-
- 1-Diego 
+1-Diego 
 2-Lulu 
 3-Giro
- 4-Luca
- 5-Jimmi
- 6-Fra
- 7-Tizio
- 8-Nonno
- 9-Nonna
+4-Luca
+5-Jimmi
+6-Fra
+7-Tizio
+8-Nonno
+9-Nonna
 10-Zia
