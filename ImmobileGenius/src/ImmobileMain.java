@@ -128,6 +128,9 @@ public class ImmobileMain extends JFrame {
 
 				}
 
+				Log4j log=new  Log4j();
+				
+				log.runLog4j();
 			}
 		});
 		
